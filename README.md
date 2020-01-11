@@ -40,30 +40,9 @@ You can also download the datasets by running the relevant cells in the notebook
 ## Run the notebook
 Run `ecg/ecg/icbeb.ipynb` cell by cell. Be careful that the command `build_json()` should only be run once and the kernel needs to be restarted before running the subsequent codes, to avoid out-of-memory errors.
 
-So far the `autonet(params)` function cannot be directly called in the notebook due to memory constraints, as the kernel needs to be restarted every time `train_hannun_model(params)`, `train_LCN(params)`, `evaluate_hannun(params)`, or `evaluate(params)` is called. Instead, one needs to adjust the hyperparameters (repeat, skip, bn) manually according to the `autonet(params)` algorithm.
+So far the `autonet(params)` function cannot be directly called in the notebook due to memory constraints, as the kernel needs to be restarted every time `train_hannun_model(params)`, `train_LCN(params)`, `evaluate_hannun(params)`, or `evaluate(params)` is called. Instead, one needs to adjust the hyperparameters (`repeat`, `skip`, `bn`) manually according to the `autonet(params)` algorithm.
 
 
 
-
-## Citation and Reference
-
-This work is published in the following paper in *Nature Medicine*
-
-[Hannun et al. 2019. Cardiologist-level arrhythmia detection and classification in ambulatory electrocardiograms using a deep neural network](https://www.nature.com/articles/s41591-018-0268-3)
-
-If you find this codebase useful for your research please cite:
-
-```
-@article{hannun2019cardiologist,
-  title={Cardiologist-level arrhythmia detection and classification in ambulatory electrocardiograms using a deep neural network},
-  author={Hannun, Awni Y and Rajpurkar, Pranav and Haghpanahi, Masoumeh and Tison, Geoffrey H and Bourn, Codie and Turakhia, Mintu P and Ng, Andrew Y},
-  journal={Nature Medicine},
-  volume={25},
-  number={1},
-  pages={65},
-  year={2019},
-  publisher={Nature Publishing Group}
-}
-```
 
 
