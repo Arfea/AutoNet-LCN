@@ -5,7 +5,7 @@ This repo is forked and modified from https://github.com/awni/ecg.git
 Clone the repository
 
 ```
-git clone git@github.com:awni/ecg.git
+git clone https://github.com/Arfea/ecg.git
 ```
 
 If you don't have `virtualenv`, install it with
