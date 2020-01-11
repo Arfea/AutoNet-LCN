@@ -1,3 +1,5 @@
+This repo is forked and modified from https://github.com/awni/ecg.git
+
 ## Install 
 
 Clone the repository
@@ -30,46 +32,24 @@ To install with GPU support run
 ```
 env TF=gpu ./setup.sh
 ```
+## Download ICBEB dataset
+For illustration purpose, we demonstrate the LCN benchmarked with ResNet-based model by Hannun et al. (https://www.nature.com/articles/s41591-018-0268-3) on the [ICBEB 2018 Challenge](http://2018.icbeb.org/Challenge.html).
 
-## Training
+You can also download the datasets by running the relevant cells in the notebook (see below).
 
-In the repo root direcotry (`ecg`) make a new directory called `saved`.
+## Run the notebook
+Run ecg/ecg/icbeb.ipynb cell by cell. Be careful that the command `build_set()` should only be run once and the kernel needs to be restarted before running the subsequent codes, to avoid out-of-memory errors.
 
-```
-mkdir saved
-```
+So far the `autonet(params)` function cannot be directly called in the notebook due to memory constraints, as the kernel needs to be restarted every time `train_hannun_model(params)`, `train_LCN(params)`, `evaluate_hannun(params)`, or `evaluate(params)` is called. Instead, one needs to adjust the hyperparameters (repeat, skip, bn) manually according to the `autonet(params)` algorithm.
 
-To train a model use the following command, replacing `path_to_config.json`
-with an actual config:
 
-```
-python ecg/train.py path_to_config.json
-```
 
-Note that after each epoch the model is saved in
-`ecg/saved/<experiment_id>/<timestamp>/<model_id>.hdf5`.
-
-For an actual example of how to run this code on a real dataset, you can follow
-the instructions in the cinc17 [README](examples/cinc17/README.md). This will
-walk through downloading the Physionet 2017 challenge dataset and training and
-evaluating a model.
-
-## Testing
-
-After training the model for a few epochs, you can make predictions with.
-
-```
-python ecg/predict.py <dataset>.json <model>.hdf5
-```
-
-replacing `<dataset>` with an actual path to the dataset and `<model>` with the
-path to the model.
 
 ## Citation and Reference
 
 This work is published in the following paper in *Nature Medicine*
 
-[Cardiologist-level arrhythmia detection and classification in ambulatory electrocardiograms using a deep neural network](https://www.nature.com/articles/s41591-018-0268-3)
+[Hannun et al. 2019. Cardiologist-level arrhythmia detection and classification in ambulatory electrocardiograms using a deep neural network](https://www.nature.com/articles/s41591-018-0268-3)
 
 If you find this codebase useful for your research please cite:
 
