@@ -33,7 +33,7 @@ To install with GPU support run
 env TF=gpu ./setup.sh
 ```
 ## Download ICBEB dataset
-For illustration purpose, we demonstrate the LCN benchmarked with ResNet-based model by Hannun et al. (https://www.nature.com/articles/s41591-018-0268-3) on the [ICBEB 2018 Challenge](http://2018.icbeb.org/Challenge.html).
+For illustration purpose, we demonstrate the LCN benchmarked with ResNet-based model by [Hannun et al.](https://www.nature.com/articles/s41591-018-0268-3) on the [ICBEB 2018 Challenge](http://2018.icbeb.org/Challenge.html).
 
 You can also download the datasets by running the relevant cells in the notebook (see below).
 
