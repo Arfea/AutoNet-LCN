@@ -38,7 +38,7 @@ For illustration purpose, we demonstrate the LCN benchmarked with ResNet-based m
 You can also download the datasets by running the relevant cells in the notebook (see below).
 
 ## Run the notebook
-Run `ecg/ecg/icbeb.ipynb` cell by cell. Be careful that the command `build_json()` should only be run once and the kernel needs to be restarted before running the subsequent codes, to avoid out-of-memory errors.
+Run `AutoNet-LCN/ecg/icbeb.ipynb` cell by cell. Be careful that the command `build_json()` should only be run once and the kernel needs to be restarted before running the subsequent codes, to avoid out-of-memory errors.
 
 So far the `autonet(params)` function cannot be directly called in the notebook due to memory constraints, as the kernel needs to be restarted every time `train_hannun_model(params)`, `train_LCN(params)`, `evaluate_hannun(params)`, or `evaluate(params)` is called. Instead, one needs to adjust the hyperparameters (`repeat`, `skip`, `bn`) manually according to the `autonet(params)` algorithm.
 
