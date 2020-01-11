@@ -1,4 +1,4 @@
-This repo is forked and modified from https://github.com/awni/ecg.git
+This repo is forked and modified from https://github.com/awni/AutoNet-LCN.git
 
 ## Install 
 
