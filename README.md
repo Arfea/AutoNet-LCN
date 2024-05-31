@@ -1,4 +1,5 @@
-This repo is forked and modified from https://github.com/awni/AutoNet-LCN.git
+This is the code accompanying the following paper:
+Shen, Yanting, et al. "AutoNet-Generated Deep Layer-Wise Convex Networks for ECG Classification." IEEE Transactions on Pattern Analysis and Machine Intelligence (2024).
 
 ## Install 
 
